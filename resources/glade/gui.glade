@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.1 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkWindow" id="mainWindow">
+    <property name="can_focus">False</property>
+    <property name="title" translatable="yes">Échecs</property>
+    <property name="default_width">1200</property>
+    <property name="default_height">700</property>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkBox">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkMenuBar">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkMenuItem">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">_Partie</property>
+                <property name="use_underline">True</property>
+                <child type="submenu">
+                  <object class="GtkMenu">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkMenuItem" id="newGame">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label">_Nouvelle Partie</property>
+                        <property name="use_underline">True</property>
+                        <accelerator key="n" signal="activate" modifiers="GDK_CONTROL_MASK"/>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkMenuItem" id="newGame960">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label">Nouvelle Partie 960</property>
+                        <accelerator key="n" signal="activate" modifiers="GDK_SHIFT_MASK | GDK_CONTROL_MASK"/>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkMenuItem" id="newGameHill">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label">Nouvelle Partie KOTH</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkMenuItem" id="newGameThreeCheck">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label">Nouvelle Partie 3 échecs</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkMenuItem" id="newGameHorde">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label">Nouvelle Partie Horde</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkSeparatorMenuItem">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkRadioMenuItem" id="radioPvP">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">Joueur vs Joueur</property>
+                        <property name="active">True</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkRadioMenuItem" id="radioPvI">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">Joueur vs IA</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkRadioMenuItem" id="radioIvP">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">IA vs Joueur</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkRadioMenuItem" id="radioIvI">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">IA vs IA</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkSeparatorMenuItem">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkMenuItem" id="undo">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label">_Annuler dernier coup</property>
+                        <property name="use_underline">True</property>
+                        <accelerator key="z" signal="activate" modifiers="GDK_CONTROL_MASK"/>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkSeparatorMenuItem">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkMenuItem" id="quit">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label">_Quitter</property>
+                        <property name="use_underline">True</property>
+                        <accelerator key="w" signal="activate" modifiers="GDK_CONTROL_MASK"/>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkMenuItem">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">_Options</property>
+                <property name="use_underline">True</property>
+                <child type="submenu">
+                  <object class="GtkMenu">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkMenuItem">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">Affichage</property>
+                        <child type="submenu">
+                          <object class="GtkMenu">
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <child>
+                              <object class="GtkCheckMenuItem" id="drawGrid">
+                                <property name="visible">True</property>
+                                <property name="can_focus">False</property>
+                                <property name="label">Grille</property>
+                                <property name="active">True</property>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkCheckMenuItem" id="drawValidMoves">
+                                <property name="visible">True</property>
+                                <property name="can_focus">False</property>
+                                <property name="label">Coups valides</property>
+                                <property name="active">True</property>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkCheckMenuItem" id="drawLastMove">
+                                <property name="visible">True</property>
+                                <property name="can_focus">False</property>
+                                <property name="label">Dernier coup</property>
+                                <property name="active">True</property>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkCheckMenuItem" id="drawCoordinates">
+                                <property name="visible">True</property>
+                                <property name="can_focus">False</property>
+                                <property name="label">Coordonnées</property>
+                                <property name="active">True</property>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkCheckMenuItem" id="flipBoard">
+                                <property name="visible">True</property>
+                                <property name="can_focus">False</property>
+                                <property name="label">Retourner échiquier</property>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkMenuItem" id="editTheme">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label">Modifier thème</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkMenuItem" id="aiSettings">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label">Paramètres I.A.</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkAspectFrame" id="background">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label_xalign">0</property>
+            <property name="shadow_type">none</property>
+            <property name="ratio">1.6699999570846558</property>
+            <property name="obey_child">False</property>
+            <child>
+              <object class="GtkGrid">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="hexpand">True</property>
+                <property name="vexpand">True</property>
+                <property name="border_width">20</property>
+                <child>
+                  <object class="gtkmm__CustomObject_ChessboardArea" id="chessBoard">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="hexpand">True</property>
+                    <property name="vexpand">True</property>
+                    <property name="drawGrid">True</property>
+                    <property name="drawLastMove">True</property>
+                    <property name="drawValidMoves">True</property>
+                    <property name="drawCoordinates">True</property>
+                    <property name="flipBoard">True</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="top_attach">0</property>
+                    <property name="width">3</property>
+                    <property name="height">3</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkDrawingArea" id="leftPiecesTaken">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="hexpand">True</property>
+                    <property name="vexpand">True</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">0</property>
+                    <property name="height">3</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkDrawingArea" id="rightPiecesTaken">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="hexpand">True</property>
+                    <property name="vexpand">True</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">4</property>
+                    <property name="top_attach">0</property>
+                    <property name="height">3</property>
+                  </packing>
+                </child>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

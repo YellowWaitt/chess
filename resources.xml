@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+	<gresource>
+		<file>images/icon.png</file>
+		<file>images/background.jpg</file>
+		<file>images/wood_board.jpg</file>
+		<file>images/default/black_bishop.png</file>
+		<file>images/default/black_king.png</file>
+		<file>images/default/black_knight.png</file>
+		<file>images/default/black_pawn.png</file>
+		<file>images/default/black_queen.png</file>
+		<file>images/default/black_rook.png</file>
+		<file>images/default/white_bishop.png</file>
+		<file>images/default/white_king.png</file>
+		<file>images/default/white_knight.png</file>
+		<file>images/default/white_pawn.png</file>
+		<file>images/default/white_queen.png</file>
+		<file>images/default/white_rook.png</file>
+		
+		<file preprocess="xml-stripblanks">glade/gui.glade</file>
+		<file preprocess="xml-stripblanks">glade/promotion.glade</file>
+		<file preprocess="xml-stripblanks">glade/theme.glade</file>
+		<file preprocess="xml-stripblanks">glade/ai.glade</file>
+	</gresource>
+</gresources>
